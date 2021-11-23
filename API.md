@@ -4,7 +4,7 @@
 
 ### IamUserWithAccessKey <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKey"></a>
 
-AN IAM User including an Access Key that will be stored in Secrets Manager.
+An IAM User including an Access Key that will be stored in Secrets Manager.
 
 #### Initializers <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKey.Initializer"></a>
 
