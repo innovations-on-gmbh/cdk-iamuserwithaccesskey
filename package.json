@@ -1,63 +1,79 @@
 {
-  "name": "iamuserwithaccesskey",
+  "name": "cdk-iamuserwithaccesskey",
+  "description": "Creating an IAM user with access key stored in Secrets manager",
   "repository": {
     "type": "git",
-    "url": "https://github.com/shotty1/iamuserwithaccesskey.git"
+    "url": "https://github.com/innovations-on-gmbh/cdk-iamuserwithaccesskey.git"
   },
   "scripts": {
-    "clobber": "npx projen clobber",
-    "compile": "npx projen compile",
-    "test:compile": "npx projen test:compile",
-    "test": "npx projen test",
     "build": "npx projen build",
-    "test:watch": "npx projen test:watch",
-    "test:update": "npx projen test:update",
     "bump": "npx projen bump",
-    "unbump": "npx projen unbump",
-    "upgrade-dependencies": "npx projen upgrade-dependencies",
-    "upgrade-projen": "npx projen upgrade-projen",
-    "default": "npx projen default",
-    "watch": "npx projen watch",
-    "package": "npx projen package",
-    "eslint": "npx projen eslint",
+    "clobber": "npx projen clobber",
     "compat": "npx projen compat",
+    "compile": "npx projen compile",
+    "default": "npx projen default",
     "docgen": "npx projen docgen",
-    "projen": "npx projen",
-    "start": "npx projen start"
+    "eslint": "npx projen eslint",
+    "package": "npx projen package",
+    "post-compile": "npx projen post-compile",
+    "pre-compile": "npx projen pre-compile",
+    "publish:github": "npx projen publish:github",
+    "publish:npm": "npx projen publish:npm",
+    "release": "npx projen release",
+    "test": "npx projen test",
+    "test:update": "npx projen test:update",
+    "test:watch": "npx projen test:watch",
+    "unbump": "npx projen unbump",
+    "upgrade": "npx projen upgrade",
+    "upgrade-projen": "npx projen upgrade-projen",
+    "watch": "npx projen watch",
+    "projen": "npx projen"
   },
   "author": {
     "name": "Markus Ellers",
-    "email": "shotty1@users.noreply.github.com",
+    "email": "m.ellers@inno-on.de",
     "organization": false
   },
   "devDependencies": {
-    "@aws-cdk/assert": "^1.95.2",
+    "@aws-cdk/assert": "^1.133.0",
     "@types/jest": "*",
-    "@types/node": "^10.17.0",
+    "@types/node": "^14.17.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
-    "eslint": "^8.2.0",
+    "awslint": "^1.133.0",
+    "eslint": "^8.3.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.5.0",
     "eslint-plugin-import": "^2.25.3",
     "jest": "^27.3.1",
     "jest-junit": "^12",
-    "jsii": "^1.44.2",
-    "jsii-diff": "^1.44.2",
-    "jsii-docgen": "^4.1.3",
-    "jsii-pacmak": "^1.44.2",
+    "jsii": "^1.46.0",
+    "jsii-diff": "^1.46.0",
+    "jsii-docgen": "^4.1.7",
+    "jsii-pacmak": "^1.46.0",
     "json-schema": "^0.4.0",
     "npm-check-updates": "^11",
-    "projen": "^0.34.8",
+    "projen": "^0.34.15",
     "standard-version": "^9",
     "ts-jest": "^27.0.7",
     "typescript": "^4.5.2"
   },
   "peerDependencies": {
+    "@aws-cdk/aws-iam": "^1.133.0",
+    "@aws-cdk/aws-secretsmanager": "^1.133.0",
+    "@aws-cdk/core": "^1.133.0",
     "constructs": "^3.2.27"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-iam": "^1.133.0",
+    "@aws-cdk/aws-secretsmanager": "^1.133.0",
+    "@aws-cdk/core": "^1.133.0"
   },
   "bundledDependencies": [],
   "keywords": [
+    "Access Key",
+    "IAM",
+    "Secretsmanager",
     "cdk"
   ],
   "main": "lib/index.js",
@@ -98,7 +114,7 @@
     "preset": "ts-jest",
     "globals": {
       "ts-jest": {
-        "tsconfig": "tsconfig.jest.json"
+        "tsconfig": "tsconfig.dev.json"
       }
     }
   },
