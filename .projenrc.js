@@ -8,6 +8,9 @@ const project = new AwsCdkConstructLibrary({
   description: 'Creating an IAM user with access key stored in Secrets manager',
   keywords: ['IAM', 'Access Key', 'Secretsmanager'],
   repositoryUrl: 'https://github.com/innovations-on-gmbh/cdk-iamuserwithaccesskey.git',
+  npmDistTag: 'latest',
+  npmRegistryUrl: 'https://npm.pkg.github.com',
+
   cdkDependencies: [
     '@aws-cdk/aws-iam',
     '@aws-cdk/aws-secretsmanager',
@@ -21,7 +24,6 @@ const project = new AwsCdkConstructLibrary({
   ],
   docgen: true,
   // dependabot: true, //TODO
-
 
   // cdkDependencies: undefined,        /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
   // cdkTestDependencies: undefined,    /* AWS CDK modules required for testing. */
