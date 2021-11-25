@@ -23,7 +23,7 @@ const project = new AwsCdkConstructLibrary({
     '.idea',
   ],
   docgen: true,
-  // dependabot: true, //TODO
+  dependabot: true,
 
   // cdkDependencies: undefined,        /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
   // cdkTestDependencies: undefined,    /* AWS CDK modules required for testing. */
