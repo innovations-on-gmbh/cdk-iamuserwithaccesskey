@@ -4,12 +4,12 @@ const project = new AwsCdkConstructLibrary({
   authorAddress: 'm.ellers@inno-on.de',
   cdkVersion: '1.133.0',
   defaultReleaseBranch: 'main',
-  name: 'cdk-iamuserwithaccesskey',
+  name: '@innovations-on-gmbh/cdk-iamuserwithaccesskey',
   description: 'Creating an IAM user with access key stored in Secrets manager',
   keywords: ['IAM', 'Access Key', 'Secretsmanager'],
   repositoryUrl: 'https://github.com/innovations-on-gmbh/cdk-iamuserwithaccesskey.git',
   npmDistTag: 'latest',
-  npmRegistryUrl: 'https://npm.pkg.github.com',
+  npmRegistryUrl: 'https://npm.pkg.github.com/',
 
   cdkDependencies: [
     '@aws-cdk/aws-iam',

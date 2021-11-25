@@ -1,5 +1,5 @@
 {
-  "name": "cdk-iamuserwithaccesskey",
+  "name": "@innovations-on-gmbh/cdk-iamuserwithaccesskey",
   "description": "Creating an IAM user with access key stored in Secrets manager",
   "repository": {
     "type": "git",

@@ -8,7 +8,7 @@ import { Construct, Fn, CfnOutput } from '@aws-cdk/core';
 export interface IamUserWithAccessKeyProps extends iam.UserProps {}
 
 /**
- * An IAM User including an Access Key that will be stored in Secrets Manager
+ * An IAM User including an Access Key that will be stored in Secrets Manager. The properties as for normal IAM Users.
  */
 export class IamUserWithAccessKey extends iam.User {
   /**

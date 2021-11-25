@@ -2,33 +2,35 @@
 
 ## Constructs <a name="Constructs"></a>
 
-### IamUserWithAccessKey <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKey"></a>
+### IamUserWithAccessKey <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKey"></a>
 
 An IAM User including an Access Key that will be stored in Secrets Manager.
 
-#### Initializers <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKey.Initializer"></a>
+The properties as for normal IAM Users.
+
+#### Initializers <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKey.Initializer"></a>
 
 ```typescript
-import { IamUserWithAccessKey } from 'cdk-iamuserwithaccesskey'
+import { IamUserWithAccessKey } from '@innovations-on-gmbh/cdk-iamuserwithaccesskey'
 
 new IamUserWithAccessKey(scope: Construct, id: string, props?: IamUserWithAccessKeyProps)
 ```
 
-##### `scope`<sup>Required</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKey.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKey.parameter.scope"></a>
 
 - *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
 
 ---
 
-##### `id`<sup>Required</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKey.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKey.parameter.id"></a>
 
 - *Type:* `string`
 
 ---
 
-##### `props`<sup>Optional</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKey.parameter.props"></a>
+##### `props`<sup>Optional</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKey.parameter.props"></a>
 
-- *Type:* [`cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps`](#cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps)
+- *Type:* [`@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps`](#@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps)
 
 ---
 
@@ -36,7 +38,7 @@ new IamUserWithAccessKey(scope: Construct, id: string, props?: IamUserWithAccess
 
 #### Properties <a name="Properties"></a>
 
-##### `accessKey`<sup>Required</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKey.property.accessKey"></a>
+##### `accessKey`<sup>Required</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKey.property.accessKey"></a>
 
 ```typescript
 public readonly accessKey: CfnAccessKey;
@@ -48,7 +50,7 @@ An attribute that represents the iam access_key.
 
 ---
 
-##### `secret`<sup>Required</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKey.property.secret"></a>
+##### `secret`<sup>Required</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKey.property.secret"></a>
 
 ```typescript
 public readonly secret: Secret;
@@ -63,19 +65,19 @@ An attribute that represents the secret.
 
 ## Structs <a name="Structs"></a>
 
-### IamUserWithAccessKeyProps <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps"></a>
+### IamUserWithAccessKeyProps <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps"></a>
 
 Properties for the IAM User.
 
 #### Initializer <a name="[object Object].Initializer"></a>
 
 ```typescript
-import { IamUserWithAccessKeyProps } from 'cdk-iamuserwithaccesskey'
+import { IamUserWithAccessKeyProps } from '@innovations-on-gmbh/cdk-iamuserwithaccesskey'
 
 const iamUserWithAccessKeyProps: IamUserWithAccessKeyProps = { ... }
 ```
 
-##### `groups`<sup>Optional</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.groups"></a>
+##### `groups`<sup>Optional</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.groups"></a>
 
 ```typescript
 public readonly groups: IGroup[];
@@ -90,7 +92,7 @@ You can also use `addToGroup` to add this user to a group.
 
 ---
 
-##### `managedPolicies`<sup>Optional</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.managedPolicies"></a>
+##### `managedPolicies`<sup>Optional</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.managedPolicies"></a>
 
 ```typescript
 public readonly managedPolicies: IManagedPolicy[];
@@ -105,7 +107,7 @@ You can add managed policies later using `addManagedPolicy(ManagedPolicy.fromAws
 
 ---
 
-##### `password`<sup>Optional</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.password"></a>
+##### `password`<sup>Optional</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.password"></a>
 
 ```typescript
 public readonly password: SecretValue;
@@ -120,7 +122,7 @@ You can use `SecretValue.plainText` to specify a password in plain text or use `
 
 ---
 
-##### `passwordResetRequired`<sup>Optional</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.passwordResetRequired"></a>
+##### `passwordResetRequired`<sup>Optional</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.passwordResetRequired"></a>
 
 ```typescript
 public readonly passwordResetRequired: boolean;
@@ -135,7 +137,7 @@ If this is set to 'true', you must also specify "initialPassword".
 
 ---
 
-##### `path`<sup>Optional</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.path"></a>
+##### `path`<sup>Optional</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.path"></a>
 
 ```typescript
 public readonly path: string;
@@ -150,7 +152,7 @@ For more information about paths, see IAM Identifiers in the IAM User Guide.
 
 ---
 
-##### `permissionsBoundary`<sup>Optional</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.permissionsBoundary"></a>
+##### `permissionsBoundary`<sup>Optional</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.permissionsBoundary"></a>
 
 ```typescript
 public readonly permissionsBoundary: IManagedPolicy;
@@ -167,7 +169,7 @@ A permissions boundary is an advanced feature for using a managed policy to set 
 
 ---
 
-##### `userName`<sup>Optional</sup> <a name="cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.userName"></a>
+##### `userName`<sup>Optional</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.userName"></a>
 
 ```typescript
 public readonly userName: string;
