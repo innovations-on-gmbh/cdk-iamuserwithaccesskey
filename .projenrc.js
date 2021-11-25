@@ -2,7 +2,7 @@ const { AwsCdkConstructLibrary } = require('projen');
 const project = new AwsCdkConstructLibrary({
   author: 'Markus Ellers',
   authorAddress: 'm.ellers@inno-on.de',
-  cdkVersion: '1.133.0',
+  cdkVersion: '1.134.0',
   defaultReleaseBranch: 'main',
   name: '@innovations-on-gmbh/cdk-iamuserwithaccesskey',
   description: 'Creating an IAM user with access key stored in Secrets manager',
