@@ -2181,9 +2181,9 @@ dateformat@^3.0.0:
   integrity sha512-jyCETtSl3VMZMWeRo7iY1FL19ges1t55hMo5yaam4Jrsm5EPL89UQkoQRyiI+Yf4k8r2ZpdngkV8hr1lIdjb3Q==
 
 debug@4, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1, debug@^4.3.2:
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.2.tgz#f0a49c18ac8779e31d4a0c6029dfb76873c7428b"
-  integrity sha512-mOp8wKcvj7XxC78zLgw/ZA+6TSgkoE2C/ienthhRD298T7UNwAg9diBpLRxC0mOezLl4B0xV7M0cCO6P/O0Xhw==
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-4.3.3.tgz#04266e0b70a98d4462e6e288e38259213332b664"
+  integrity sha512-/zxw5+vh1Tfv+4Qn7a5nsbcJKPaSvCDhojn6FEl9vupwK2VCSDtEiEtqr8DFtzYFOdz63LBkxec7DYuc2jon6Q==
   dependencies:
     ms "2.1.2"
 
@@ -4225,10 +4225,10 @@ jsii-diff@^1.46.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@^4.1.10:
-  version "4.1.10"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.1.10.tgz#a1b79594a3f1738f8e28f05ab96d3d856c15317e"
-  integrity sha512-ngJ09d5M1Tw1Po4QOjy6GsoZRwm2b0wu/61ouJZRLZo+qOuNFv++CARCLgEFv/a+/Ls5pE7mM3Uz6h7Ft/11mA==
+jsii-docgen@^4.1.11:
+  version "4.1.11"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.1.11.tgz#7bc64de032bb680a929db41409f9a7506587475b"
+  integrity sha512-N5ZL99r1Y7FocWUfFOpJ5UXoGpCmpir4J8VkTLfBT+N7ijgFQzcec1RaMnBBHgQDzOKqHiHrhUuHmCxN76Yscg==
   dependencies:
     "@jsii/spec" "^1.46.0"
     case "^1.6.3"
