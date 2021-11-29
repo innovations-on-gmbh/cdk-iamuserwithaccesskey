@@ -41,6 +41,7 @@ export class IamUserWithAccessKey extends iam.User {
     // We need to access the underlying cfn resource to set the secret string
     const cfnSecret = this.secret.node.defaultChild as sm.CfnSecret;
     cfnSecret.secretString = UserSecretString;
+    cfnSecret.addOverride('Properties.GenerateSecretString', 'AWS::NoValue');
 
     new CfnOutput(this, 'SecretArn', {
       value: this.secret.secretArn.toString(),
