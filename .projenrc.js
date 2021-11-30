@@ -33,4 +33,10 @@ const project = new AwsCdkConstructLibrary({
   // projectType: ProjectType.UNKNOWN,  /* Which type of project this is (library/app). */
   // release: undefined,                /* Add release management to this project. */
 });
+
+// FIXME: https://github.com/projen/projen/issues/1264
+project.package.addField('resolutions', {
+  'jest-environment-jsdom': '27.3.1',
+});
+
 project.synth();
