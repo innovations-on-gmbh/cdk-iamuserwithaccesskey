@@ -725,7 +725,7 @@
     slash "^3.0.0"
     strip-ansi "^6.0.0"
 
-"@jest/environment@^27.3.1", "@jest/environment@^27.4.2":
+"@jest/environment@^27.4.2":
   version "27.4.2"
   resolved "https://registry.yarnpkg.com/@jest/environment/-/environment-27.4.2.tgz#03efabce528dbb09bffd3ec7e39bb0f3f7475cc2"
   integrity sha512-uSljKxh/rGlHlmhyeG4ZoVK9hOec+EPBkwTHkHKQ2EqDu5K+MaG9uJZ8o1CbRsSdZqSuhXvJCYhBWsORPPg6qw==
@@ -735,7 +735,7 @@
     "@types/node" "*"
     jest-mock "^27.4.2"
 
-"@jest/fake-timers@^27.3.1", "@jest/fake-timers@^27.4.2":
+"@jest/fake-timers@^27.4.2":
   version "27.4.2"
   resolved "https://registry.yarnpkg.com/@jest/fake-timers/-/fake-timers-27.4.2.tgz#d217f86c3ba2027bf29e0b731fd0cb761a72d093"
   integrity sha512-f/Xpzn5YQk5adtqBgvw1V6bF8Nx3hY0OIRRpCvWcfPl0EAjdqWPdhH3t/3XpiWZqtjIEHDyMKP9ajpva1l4Zmg==
@@ -837,7 +837,7 @@
     source-map "^0.6.1"
     write-file-atomic "^3.0.0"
 
-"@jest/types@^27.2.5", "@jest/types@^27.4.2":
+"@jest/types@^27.4.2":
   version "27.4.2"
   resolved "https://registry.yarnpkg.com/@jest/types/-/types-27.4.2.tgz#96536ebd34da6392c2b7c7737d693885b5dd44a5"
   integrity sha512-j35yw0PMTPpZsUoOBiuHzr1zTYoad1cVIE0ajEjcrJONxxrko/IRGKkXx3os0Nsi4Hu3+5VmDbVfq5WhG/pWAg==
@@ -1334,11 +1334,6 @@ ansi-regex@^2.0.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-2.1.1.tgz#c3b33ab5ee360d86e0e628f0468ae7ef27d654df"
   integrity sha1-w7M6te42DYbg5ijwRorn7yfWVN8=
-
-ansi-regex@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/ansi-regex/-/ansi-regex-4.1.0.tgz#8b9f8f08cf1acb843756a839ca8c7e3168c51997"
-  integrity sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg==
 
 ansi-regex@^5.0.1:
   version "5.0.1"
@@ -3824,17 +3819,17 @@ jest-each@^27.4.2:
     jest-util "^27.4.2"
     pretty-format "^27.4.2"
 
-jest-environment-jsdom@27.3.1, jest-environment-jsdom@^27.4.3:
-  version "27.3.1"
-  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-27.3.1.tgz#63ac36d68f7a9303494df783494856222b57f73e"
-  integrity sha512-3MOy8qMzIkQlfb3W1TfrD7uZHj+xx8Olix5vMENkj5djPmRqndMaXtpnaZkxmxM+Qc3lo+yVzJjzuXbCcZjAlg==
+jest-environment-jsdom@^27.4.3:
+  version "27.4.3"
+  resolved "https://registry.yarnpkg.com/jest-environment-jsdom/-/jest-environment-jsdom-27.4.3.tgz#74198285f6284888ca9c7486c4e5e67add75aa53"
+  integrity sha512-x1AUVz3G14LpEJs7KIFUaTINT2n0unOUmvdAby3s/sldUpJJetOJifHo1O/EUQC5fNBowggwJbVulko18y6OWw==
   dependencies:
-    "@jest/environment" "^27.3.1"
-    "@jest/fake-timers" "^27.3.1"
-    "@jest/types" "^27.2.5"
+    "@jest/environment" "^27.4.2"
+    "@jest/fake-timers" "^27.4.2"
+    "@jest/types" "^27.4.2"
     "@types/node" "*"
-    jest-mock "^27.3.0"
-    jest-util "^27.3.1"
+    jest-mock "^27.4.2"
+    jest-util "^27.4.2"
     jsdom "^16.6.0"
 
 jest-environment-node@^27.4.2:
@@ -3898,13 +3893,13 @@ jest-jasmine2@^27.4.2:
     pretty-format "^27.4.2"
     throat "^6.0.1"
 
-jest-junit@^12:
-  version "12.3.0"
-  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-12.3.0.tgz#ee41a74e439eecdc8965f163f83035cce5998d6d"
-  integrity sha512-+NmE5ogsEjFppEl90GChrk7xgz8xzvF0f+ZT5AnhW6suJC93gvQtmQjfyjDnE0Z2nXJqEkxF0WXlvjG/J+wn/g==
+jest-junit@^13:
+  version "13.0.0"
+  resolved "https://registry.yarnpkg.com/jest-junit/-/jest-junit-13.0.0.tgz#479be347457aad98ae8a5983a23d7c3ec526c9a3"
+  integrity sha512-JSHR+Dhb32FGJaiKkqsB7AR3OqWKtldLd6ZH2+FJ8D4tsweb8Id8zEVReU4+OlrRO1ZluqJLQEETm+Q6/KilBg==
   dependencies:
     mkdirp "^1.0.4"
-    strip-ansi "^5.2.0"
+    strip-ansi "^6.0.1"
     uuid "^8.3.2"
     xml "^1.0.1"
 
@@ -3941,7 +3936,7 @@ jest-message-util@^27.4.2:
     slash "^3.0.0"
     stack-utils "^2.0.3"
 
-jest-mock@^27.3.0, jest-mock@^27.4.2:
+jest-mock@^27.4.2:
   version "27.4.2"
   resolved "https://registry.yarnpkg.com/jest-mock/-/jest-mock-27.4.2.tgz#184ff197a25491bfe4570c286daa5d62eb760b88"
   integrity sha512-PDDPuyhoukk20JrQKeofK12hqtSka7mWH0QQuxSNgrdiPsrnYYLS6wbzu/HDlxZRzji5ylLRULeuI/vmZZDrYA==
@@ -4082,7 +4077,7 @@ jest-snapshot@^27.4.2:
     pretty-format "^27.4.2"
     semver "^7.3.2"
 
-jest-util@^27.0.0, jest-util@^27.3.1, jest-util@^27.4.2:
+jest-util@^27.0.0, jest-util@^27.4.2:
   version "27.4.2"
   resolved "https://registry.yarnpkg.com/jest-util/-/jest-util-27.4.2.tgz#ed95b05b1adfd761e2cda47e0144c6a58e05a621"
   integrity sha512-YuxxpXU6nlMan9qyLuxHaMMOzXAl5aGZWCSzben5DhLHemYQxCc4YK+4L3ZrCutT8GPQ+ui9k5D8rUJoDioMnA==
@@ -4226,10 +4221,10 @@ jsii-diff@^1.46.0:
     typescript "~3.9.10"
     yargs "^16.2.0"
 
-jsii-docgen@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.2.0.tgz#e89041bc852be59c70c2f9d1a3cef76d4f1368b1"
-  integrity sha512-84AWH6nq+Yth8Of8pW0U3NvTAHrMVHc4Eh5qjq9yGmtxxU5G7lHonlYnexh0P3QpHYEnVFM1qtkmYklY2pfPGQ==
+jsii-docgen@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/jsii-docgen/-/jsii-docgen-4.2.1.tgz#4ff0ee29c9a75bae29827e7927b5b88e0108eebc"
+  integrity sha512-YhYlPhlUieiF61ksaNwLVbUAYFMnxzTcdqyPTE0o6+GxS9s65BEKATmh+TWObImCZ+yVNAatELexUxC5XPn8dA==
   dependencies:
     "@jsii/spec" "^1.46.0"
     case "^1.6.3"
@@ -5353,10 +5348,10 @@ progress@^2.0.0, progress@^2.0.3:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-projen@^0.34.26:
-  version "0.34.26"
-  resolved "https://registry.yarnpkg.com/projen/-/projen-0.34.26.tgz#0f72d2c12ce0c852e4c05ba936c140770f4f6974"
-  integrity sha512-8L4ylz7IJ2KAOg5ywwEK9MT8bC3gQIvNtBLqMjDrsRIflwZfxgQ2GnFbHz4o+LybbKU/cIyK0PbrtcTz3z4JnA==
+projen@^0.36.3:
+  version "0.36.3"
+  resolved "https://registry.yarnpkg.com/projen/-/projen-0.36.3.tgz#c8c8a25e11215b26785f15f06a4b289ed9944aec"
+  integrity sha512-hxWkaYBXt8CyJnpt0gyIWQr48H7lH2rUkuvv6vUZ48mJ444qWJQt2p0wGimfpVxHE0hCaptwf0r8JTZTrYVQxQ==
   dependencies:
     "@iarna/toml" "^2.2.5"
     case "^1.6.3"
@@ -6042,13 +6037,6 @@ strip-ansi@^3.0.0, strip-ansi@^3.0.1:
   integrity sha1-ajhfuIU9lS1f8F0Oiq+UJ43GPc8=
   dependencies:
     ansi-regex "^2.0.0"
-
-strip-ansi@^5.2.0:
-  version "5.2.0"
-  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-5.2.0.tgz#8c9a536feb6afc962bdfa5b104a5091c1ad9c0ae"
-  integrity sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==
-  dependencies:
-    ansi-regex "^4.1.0"
 
 strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
