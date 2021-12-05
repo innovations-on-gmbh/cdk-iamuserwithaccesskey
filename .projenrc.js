@@ -13,6 +13,7 @@ const project = new AwsCdkConstructLibrary({
 
   cdkDependencies: [
     '@aws-cdk/aws-iam',
+    '@aws-cdk/aws-kms',
     '@aws-cdk/aws-secretsmanager',
     '@aws-cdk/core',
   ],

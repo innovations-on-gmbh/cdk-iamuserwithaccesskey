@@ -1,11 +1,17 @@
 import * as iam from '@aws-cdk/aws-iam';
+import * as kms from '@aws-cdk/aws-kms';
 import * as sm from '@aws-cdk/aws-secretsmanager';
 import { Construct, Fn, CfnOutput } from '@aws-cdk/core';
 
 /**
  * Properties for the IAM User
  */
-export interface IamUserWithAccessKeyProps extends iam.UserProps {}
+export interface IamUserWithAccessKeyProps extends iam.UserProps {
+  /**
+   * An optional custom encryption key for the secret.
+   */
+  readonly encryptionKey?: kms.Key | undefined;
+}
 
 /**
  * An IAM User including an Access Key that will be stored in Secrets Manager. The properties as for normal IAM Users.
@@ -36,7 +42,13 @@ export class IamUserWithAccessKey extends iam.User {
       Secret_Access_Key: Fn.getAtt(this.accessKey.logicalId, 'SecretAccessKey').toString(), //TODO: Check if this references the correct resource. AccessKey vs SecretAccessKey
     });
 
-    this.secret = new sm.Secret(this, `${id}UserSecret`);
+    if (props?.encryptionKey) {
+      this.secret = new sm.Secret(this, `${id}UserSecret`, {
+        encryptionKey: props.encryptionKey,
+      });
+    } else {
+      this.secret = new sm.Secret(this, `${id}UserSecret`);
+    };
 
     // We need to access the underlying cfn resource to set the secret string
     const cfnSecret = this.secret.node.defaultChild as sm.CfnSecret;

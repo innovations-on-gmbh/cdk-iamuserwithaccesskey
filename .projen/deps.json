@@ -99,6 +99,11 @@
       "type": "peer"
     },
     {
+      "name": "@aws-cdk/aws-kms",
+      "version": "^1.134.0",
+      "type": "peer"
+    },
+    {
       "name": "@aws-cdk/aws-secretsmanager",
       "version": "^1.134.0",
       "type": "peer"
@@ -115,6 +120,11 @@
     },
     {
       "name": "@aws-cdk/aws-iam",
+      "version": "^1.134.0",
+      "type": "runtime"
+    },
+    {
+      "name": "@aws-cdk/aws-kms",
       "version": "^1.134.0",
       "type": "runtime"
     },

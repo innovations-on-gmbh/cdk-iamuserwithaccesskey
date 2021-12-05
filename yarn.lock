@@ -132,7 +132,7 @@
     "@aws-cdk/region-info" "1.134.0"
     constructs "^3.3.69"
 
-"@aws-cdk/aws-kms@1.134.0":
+"@aws-cdk/aws-kms@1.134.0", "@aws-cdk/aws-kms@^1.134.0":
   version "1.134.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-kms/-/aws-kms-1.134.0.tgz#fd929d02ad0da1cd7626f2c886bae34acf531e0e"
   integrity sha512-nuXWE/lHnR9PzZdjCN9cbhT5IAHS593JVrS889v+O/9l3jLCgdSaElQ6EAjmr7WHne2npRbTo/Qw7ebT31BIRQ==
