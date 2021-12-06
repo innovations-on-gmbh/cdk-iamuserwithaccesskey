@@ -103,7 +103,7 @@ const iamUserWithAccessKeyProps: IamUserWithAccessKeyProps = { ... }
 | [`path`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypath) | `string` | The path for the user name. |
 | [`permissionsBoundary`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypermissionsboundary) | [`@aws-cdk/aws-iam.IManagedPolicy`](#@aws-cdk/aws-iam.IManagedPolicy) | AWS supports permissions boundaries for IAM entities (users or roles). |
 | [`userName`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyusername) | `string` | A name for the IAM user. |
-| [`encryptionKey`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyencryptionkey) | [`@aws-cdk/aws-kms.Key`](#@aws-cdk/aws-kms.Key) | *No description.* |
+| [`encryptionKey`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyencryptionkey) | [`@aws-cdk/aws-kms.Key`](#@aws-cdk/aws-kms.Key) | An optional custom encryption key for the secret. |
 
 ---
 
@@ -221,6 +221,8 @@ public readonly encryptionKey: Key;
 ```
 
 - *Type:* [`@aws-cdk/aws-kms.Key`](#@aws-cdk/aws-kms.Key)
+
+An optional custom encryption key for the secret.
 
 ---
 
