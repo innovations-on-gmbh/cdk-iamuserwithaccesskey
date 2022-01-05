@@ -1,6 +1,5 @@
 # CDK IAM User with Access Key
 
-
 [AWS CDK] L3 construct for managing IAM Users with static credentials.
 
 CDK does not support creating Access Keys, so this construct helps you to do it correctly. It creates three resources:
@@ -9,7 +8,7 @@ CDK does not support creating Access Keys, so this construct helps you to do it 
 - An Access Key
 - A Secrets Manager Secret
 
-You should only use this for 
+You should only use this for technical access to AWS APIs. Not for personal user accounts.
 
 ## Installation
 
@@ -43,7 +42,7 @@ export class MyStack extends Stack {
 }
 ```
 
-The AccessKey and SecreAccessKey will be stored in AWS Secrets Manager. The arn will be added as a cfn Output.
+The AccessKey and SecretAccessKey will be stored in AWS Secrets Manager. The arn will be added as a cfn Output.
 
 To download the details via AWS cli you can run:
 
@@ -57,8 +56,6 @@ aws secretsmanager get-secret-value \
 ### Tag support
 
 TBD
-
-
 
 ### Encryption
 
@@ -76,5 +73,4 @@ new IamUserWithAccessKey(this, 'myUser', {
 
 This KMS key needs to be created in the same stack. You cannot use a key imported via ARN, because the keys access policy will need to be modified.
 
-
-   [AWS CDK]: https://aws.amazon.com/cdk/
+[AWS CDK]: https://aws.amazon.com/cdk/
