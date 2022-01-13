@@ -103,6 +103,7 @@ const iamUserWithAccessKeyProps: IamUserWithAccessKeyProps = { ... }
 | [`path`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypath) | `string` | The path for the user name. |
 | [`permissionsBoundary`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypermissionsboundary) | [`@aws-cdk/aws-iam.IManagedPolicy`](#@aws-cdk/aws-iam.IManagedPolicy) | AWS supports permissions boundaries for IAM entities (users or roles). |
 | [`userName`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyusername) | `string` | A name for the IAM user. |
+| [`encryptionKey`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyencryptionkey) | [`@aws-cdk/aws-kms.Key`](#@aws-cdk/aws-kms.Key) | An optional custom encryption key for the secret. |
 
 ---
 
@@ -210,6 +211,18 @@ public readonly userName: string;
 A name for the IAM user.
 
 For valid values, see the UserName parameter for the CreateUser action in the IAM API Reference. If you don't specify a name, AWS CloudFormation generates a unique physical ID and uses that ID for the user name.  If you specify a name, you cannot perform updates that require replacement of this resource. You can perform updates that require no or some interruption. If you must replace the resource, specify a new name.  If you specify a name, you must specify the CAPABILITY_NAMED_IAM value to acknowledge your template's capabilities. For more information, see Acknowledging IAM Resources in AWS CloudFormation Templates.
+
+---
+
+##### `encryptionKey`<sup>Optional</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.encryptionKey" id="innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyencryptionkey"></a>
+
+```typescript
+public readonly encryptionKey: Key;
+```
+
+- *Type:* [`@aws-cdk/aws-kms.Key`](#@aws-cdk/aws-kms.Key)
+
+An optional custom encryption key for the secret.
 
 ---
 
