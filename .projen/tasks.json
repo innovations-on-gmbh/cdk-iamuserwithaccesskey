@@ -159,6 +159,10 @@
         }
       ]
     },
+    "post-upgrade": {
+      "name": "post-upgrade",
+      "description": "Runs after upgrading dependencies"
+    },
     "pre-compile": {
       "name": "pre-compile",
       "description": "Prepare the project for compilation"
@@ -258,10 +262,13 @@
           "exec": "yarn install --check-files"
         },
         {
-          "exec": "yarn upgrade @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser awslint eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii jsii-diff jsii-docgen json-schema npm-check-updates standard-version ts-jest typescript @aws-cdk/aws-iam @aws-cdk/aws-kms @aws-cdk/aws-secretsmanager @aws-cdk/core constructs @aws-cdk/aws-iam @aws-cdk/aws-kms @aws-cdk/aws-secretsmanager @aws-cdk/core @aws-cdk/assert @aws-cdk/assertions"
+          "exec": "yarn upgrade @types/jest @types/node @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-node eslint-import-resolver-typescript eslint-plugin-import eslint jest jest-junit jsii jsii-diff jsii-docgen json-schema npm-check-updates standard-version ts-jest typescript @aws-cdk/aws-iam @aws-cdk/aws-kms @aws-cdk/aws-secretsmanager @aws-cdk/core constructs @aws-cdk/aws-iam @aws-cdk/aws-kms @aws-cdk/aws-secretsmanager @aws-cdk/core @aws-cdk/assert @aws-cdk/assertions"
         },
         {
           "exec": "npx projen"
+        },
+        {
+          "spawn": "post-upgrade"
         }
       ]
     },
@@ -295,6 +302,9 @@
         },
         {
           "exec": "npx projen"
+        },
+        {
+          "spawn": "post-upgrade"
         }
       ]
     },
