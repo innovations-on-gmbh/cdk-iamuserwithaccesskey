@@ -9,8 +9,10 @@ import { Construct, Fn, CfnOutput } from '@aws-cdk/core';
 export interface IamUserWithAccessKeyProps extends iam.UserProps {
   /**
    * An optional custom encryption key for the secret.
+   *
+   * @default The Accounts default Secret Manager KMS Key will be used.
    */
-  readonly encryptionKey?: kms.Key | undefined;
+  readonly encryptionKey?: kms.IKey | undefined;
 }
 
 /**
