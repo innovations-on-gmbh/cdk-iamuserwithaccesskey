@@ -103,7 +103,7 @@ const iamUserWithAccessKeyProps: IamUserWithAccessKeyProps = { ... }
 | [`path`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypath) | `string` | The path for the user name. |
 | [`permissionsBoundary`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypermissionsboundary) | [`@aws-cdk/aws-iam.IManagedPolicy`](#@aws-cdk/aws-iam.IManagedPolicy) | AWS supports permissions boundaries for IAM entities (users or roles). |
 | [`userName`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyusername) | `string` | A name for the IAM user. |
-| [`encryptionKey`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyencryptionkey) | [`@aws-cdk/aws-kms.Key`](#@aws-cdk/aws-kms.Key) | An optional custom encryption key for the secret. |
+| [`encryptionKey`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyencryptionkey) | [`@aws-cdk/aws-kms.IKey`](#@aws-cdk/aws-kms.IKey) | An optional custom encryption key for the secret. |
 
 ---
 
@@ -217,10 +217,11 @@ For valid values, see the UserName parameter for the CreateUser action in the IA
 ##### `encryptionKey`<sup>Optional</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps.property.encryptionKey" id="innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyencryptionkey"></a>
 
 ```typescript
-public readonly encryptionKey: Key;
+public readonly encryptionKey: IKey;
 ```
 
-- *Type:* [`@aws-cdk/aws-kms.Key`](#@aws-cdk/aws-kms.Key)
+- *Type:* [`@aws-cdk/aws-kms.IKey`](#@aws-cdk/aws-kms.IKey)
+- *Default:* The Accounts default Secret Manager KMS Key will be used.
 
 An optional custom encryption key for the secret.
 
