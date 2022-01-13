@@ -851,7 +851,7 @@
     chalk "^4.1.2"
     semver "^7.3.5"
 
-"@jsii/spec@1.52.1", "@jsii/spec@^1.50.0", "@jsii/spec@^1.52.1":
+"@jsii/spec@1.52.1", "@jsii/spec@^1.52.1":
   version "1.52.1"
   resolved "https://registry.yarnpkg.com/@jsii/spec/-/spec-1.52.1.tgz#2e44a019e3b5722a96883c42d726b748956c223e"
   integrity sha512-Mt5yzqR/DYZhxjOBTuQsstYh0gdlwSWvjTAfUGf5Rp76j8gddkADlrMRFeVrXBy/Y+ccJLUYWMSsEf1Ti6ERcQ==
@@ -1447,18 +1447,6 @@ available-typed-arrays@^1.0.5:
   resolved "https://registry.yarnpkg.com/available-typed-arrays/-/available-typed-arrays-1.0.5.tgz#92f95616501069d07d10edb2fc37d3e1c65123b7"
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
-awslint@^2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/awslint/-/awslint-2.7.0.tgz#ced92bd6fdab770589e7fcb7550a26d441918161"
-  integrity sha512-4X0ka8Nk7GDlq7IjavvcnIn9xPSq1l6zCn18KiYwTf9FN2/rboMwmRfeyr0rcucRIMPU/k31JgBtMkJWGQgnCA==
-  dependencies:
-    "@jsii/spec" "^1.50.0"
-    camelcase "^6.3.0"
-    chalk "^4"
-    fs-extra "^9.1.0"
-    jsii-reflect "^1.50.0"
-    yargs "^16.2.0"
-
 babel-jest@^27.4.6:
   version "27.4.6"
   resolved "https://registry.yarnpkg.com/babel-jest/-/babel-jest-27.4.6.tgz#4d024e69e241cdf4f396e453a07100f44f7ce314"
@@ -1658,7 +1646,7 @@ camelcase@^5.3.1:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-5.3.1.tgz#e3c9b31569e106811df242f715725a1f4c494320"
   integrity sha512-L28STB170nwWS63UjtlEOE3dldQApaJXZkOI1uMFfzf3rRuPegHaHesyee+YxQ+W6SvRDQV6UrdOdRiR153wJg==
 
-camelcase@^6.2.0, camelcase@^6.3.0:
+camelcase@^6.2.0:
   version "6.3.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-6.3.0.tgz#5685b95eb209ac9c0c177467778c9c84df58ba9a"
   integrity sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==
@@ -1682,7 +1670,7 @@ chalk@^2.0.0, chalk@^2.4.2:
     escape-string-regexp "^1.0.5"
     supports-color "^5.3.0"
 
-chalk@^4, chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.2:
+chalk@^4.0.0, chalk@^4.1.0, chalk@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-4.1.2.tgz#aac4e2b7734a740867aeb16bf02aad556a1e7a01"
   integrity sha512-oKnbhFyRIXpUuez8iBMmyEa4nbj4IOQyuhc/wy9kY7/WVPcwIO9VA668Pu8RkO7+0G76SLROeyw9CpQ061i4mA==
@@ -4080,7 +4068,7 @@ jsii-docgen@^4.2.39:
     semver "^7.3.5"
     yargs "^16.2.0"
 
-jsii-reflect@^1.50.0, jsii-reflect@^1.52.1:
+jsii-reflect@^1.52.1:
   version "1.52.1"
   resolved "https://registry.yarnpkg.com/jsii-reflect/-/jsii-reflect-1.52.1.tgz#b634f374961e72259dd79f198aa7e6ec45a3bbb2"
   integrity sha512-OsTquiUJkgUu5jlK2VeshLFP9mBd1NU7vhHvcJZ+0xc/u2byfzPT0Irj2o6XLp30Vx/+uGGK6Nf6KyKtmUe82w==

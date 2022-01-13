@@ -20,10 +20,6 @@
       "type": "build"
     },
     {
-      "name": "awslint",
-      "type": "build"
-    },
-    {
       "name": "eslint-import-resolver-node",
       "type": "build"
     },

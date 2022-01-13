@@ -17,7 +17,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@aws-cdk/aws-secretsmanager',
     '@aws-cdk/core',
   ],
-  devDeps: ['awslint'],
   cdkAssert: true,
   gitignore: [
     '.DS_Store',
