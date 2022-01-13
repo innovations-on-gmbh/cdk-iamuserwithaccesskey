@@ -20,10 +20,6 @@
       "type": "build"
     },
     {
-      "name": "awslint",
-      "type": "build"
-    },
-    {
       "name": "eslint-import-resolver-node",
       "type": "build"
     },
@@ -89,22 +85,22 @@
     },
     {
       "name": "@aws-cdk/aws-iam",
-      "version": "^1.138.0",
+      "version": "^1.139.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/aws-kms",
-      "version": "^1.138.0",
+      "version": "^1.139.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/aws-secretsmanager",
-      "version": "^1.138.0",
+      "version": "^1.139.0",
       "type": "peer"
     },
     {
       "name": "@aws-cdk/core",
-      "version": "^1.138.0",
+      "version": "^1.139.0",
       "type": "peer"
     },
     {
@@ -114,32 +110,32 @@
     },
     {
       "name": "@aws-cdk/aws-iam",
-      "version": "^1.138.0",
+      "version": "^1.139.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-kms",
-      "version": "^1.138.0",
+      "version": "^1.139.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/aws-secretsmanager",
-      "version": "^1.138.0",
+      "version": "^1.139.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/core",
-      "version": "^1.138.0",
+      "version": "^1.139.0",
       "type": "runtime"
     },
     {
       "name": "@aws-cdk/assert",
-      "version": "^1.138.0",
+      "version": "^1.139.0",
       "type": "test"
     },
     {
       "name": "@aws-cdk/assertions",
-      "version": "^1.138.0",
+      "version": "^1.139.0",
       "type": "test"
     }
   ],

@@ -2,7 +2,7 @@ const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Markus Ellers',
   authorAddress: 'm.ellers@inno-on.de',
-  cdkVersion: '1.138.2',
+  cdkVersion: '1.139.0',
   defaultReleaseBranch: 'main',
   name: '@innovations-on-gmbh/cdk-iamuserwithaccesskey',
   description: 'Creating an IAM user with access key stored in Secrets manager',
@@ -17,7 +17,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '@aws-cdk/aws-secretsmanager',
     '@aws-cdk/core',
   ],
-  devDeps: ['awslint'],
   cdkAssert: true,
   gitignore: [
     '.DS_Store',
@@ -34,5 +33,4 @@ const project = new awscdk.AwsCdkConstructLibrary({
   // projectType: ProjectType.UNKNOWN,  /* Which type of project this is (library/app). */
   // release: undefined,                /* Add release management to this project. */
 });
-
 project.synth();
