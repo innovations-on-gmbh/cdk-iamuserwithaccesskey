@@ -12,9 +12,11 @@ You should only use this for technical access to AWS APIs. Not for personal user
 
 ## Installation
 
+### projen
+
 This package has peer dependencies, which need to be installed along in the expected version.
 
-For TypeScript/NodeJS, add these to your .projenrc:
+When using projen add the following to your .projenrc:
 
 ```typescript
   cdkDependencies: [
@@ -22,10 +24,20 @@ For TypeScript/NodeJS, add these to your .projenrc:
     '@aws-cdk/aws-secretsmanager',
     '@aws-cdk/core',
   ],
-  deps: ['@innovations-on-gmbh/cdk-iamuserwithaccesskey@^0.0.15'],
+  deps: ['@innovations-on-gmbh/cdk-iamuserwithaccesskey'],
+```
+
+## npm Package Installation
+
+```bash
+yarn add --dev @innovations-on-gmbh/cdk-iamuserwithaccesskey
+# or
+npm install @innovations-on-gmbh/cdk-iamuserwithaccesskey --save-dev
 ```
 
 ## Usage
+
+### Typescript
 
 ```typescript
 import { App, Construct, Stack, StackProps } from '@aws-cdk/core';
@@ -41,6 +53,8 @@ export class MyStack extends Stack {
   }
 }
 ```
+
+### Accessing the Credentials in Secrets Manager
 
 The AccessKey and SecretAccessKey will be stored in AWS Secrets Manager. The arn will be added as a cfn Output.
 
