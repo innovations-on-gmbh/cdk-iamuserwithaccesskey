@@ -23,6 +23,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
     '.idea',
   ],
   docgen: true,
+  autoApproveUpgrades: true,
+  autoApproveOptions: { allowedUsernames: ['inno-on-bot'] },
+  autoApproveProjenUpgrades: true,
+  depsUpgradeOptions: {
+    ignoreProjen: false,
+  },
 
   // cdkDependencies: undefined,        /* Which AWS CDK modules (those that start with "@aws-cdk/") does this library require when consumed? */
   // cdkTestDependencies: undefined,    /* AWS CDK modules required for testing. */
