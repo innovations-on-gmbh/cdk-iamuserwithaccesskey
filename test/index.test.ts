@@ -1,17 +1,22 @@
-import { expect, countResources } from '@aws-cdk/assert';
-import { Stack } from '@aws-cdk/core';
+// import { expect, countResources } from '@aws-cdk/assert';
+import { Stack } from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
 import { IamUserWithAccessKey } from '../src';
 
+
 describe('User', () => {
-  it('creates the user', () => {
-    const stack = new Stack();
+  test('Template has the correct resources', () => {
+    let stack: Stack;
+    stack = new Stack();
     new IamUserWithAccessKey(stack, 'User', {
       // secretName: 'IamUserWithAccessKeySecret',
       userName: 'iamUserWithAccessKeyUsername',
     });
-    expect(stack).to(countResources('AWS::IAM::User', 1));
-    expect(stack).to(countResources('AWS::IAM::AccessKey', 1));
-    expect(stack).to(countResources('AWS::SecretsManager::Secret', 1));
+    const template = Template.fromStack(stack);
+    template.resourceCountIs('AWS::IAM::User', 1);
+    template.resourceCountIs('AWS::IAM::AccessKey', 1);
+    template.resourceCountIs('AWS::SecretsManager::Secret', 1);
+    expect(template).toMatchSnapshot();
     //TODO: Test that generateSecretString for the Secret is always null!
   });
 });
