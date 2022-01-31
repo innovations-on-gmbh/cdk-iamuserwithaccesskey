@@ -18,7 +18,7 @@ new IamUserWithAccessKey(scope: Construct, id: string, props?: IamUserWithAccess
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`scope`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeyparameterscope)<span title="Required">*</span> | [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct) | *No description.* |
+| [`scope`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeyparameterscope)<span title="Required">*</span> | [`constructs.Construct`](#constructs.Construct) | *No description.* |
 | [`id`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeyparameterid)<span title="Required">*</span> | `string` | *No description.* |
 | [`props`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeyparameterprops) | [`@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps`](#@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKeyProps) | *No description.* |
 
@@ -26,7 +26,7 @@ new IamUserWithAccessKey(scope: Construct, id: string, props?: IamUserWithAccess
 
 ##### `scope`<sup>Required</sup> <a name="@innovations-on-gmbh/cdk-iamuserwithaccesskey.IamUserWithAccessKey.parameter.scope" id="innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeyparameterscope"></a>
 
-- *Type:* [`@aws-cdk/core.Construct`](#@aws-cdk/core.Construct)
+- *Type:* [`constructs.Construct`](#constructs.Construct)
 
 ---
 
@@ -48,8 +48,8 @@ new IamUserWithAccessKey(scope: Construct, id: string, props?: IamUserWithAccess
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`accessKey`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropertyaccesskey)<span title="Required">*</span> | [`@aws-cdk/aws-iam.CfnAccessKey`](#@aws-cdk/aws-iam.CfnAccessKey) | An attribute that represents the iam access_key. |
-| [`secret`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropertysecret)<span title="Required">*</span> | [`@aws-cdk/aws-secretsmanager.Secret`](#@aws-cdk/aws-secretsmanager.Secret) | An attribute that represents the secret. |
+| [`accessKey`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropertyaccesskey)<span title="Required">*</span> | [`aws-cdk-lib.aws_iam.CfnAccessKey`](#aws-cdk-lib.aws_iam.CfnAccessKey) | An attribute that represents the iam access_key. |
+| [`secret`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropertysecret)<span title="Required">*</span> | [`aws-cdk-lib.aws_secretsmanager.Secret`](#aws-cdk-lib.aws_secretsmanager.Secret) | An attribute that represents the secret. |
 
 ---
 
@@ -59,7 +59,7 @@ new IamUserWithAccessKey(scope: Construct, id: string, props?: IamUserWithAccess
 public readonly accessKey: CfnAccessKey;
 ```
 
-- *Type:* [`@aws-cdk/aws-iam.CfnAccessKey`](#@aws-cdk/aws-iam.CfnAccessKey)
+- *Type:* [`aws-cdk-lib.aws_iam.CfnAccessKey`](#aws-cdk-lib.aws_iam.CfnAccessKey)
 
 An attribute that represents the iam access_key.
 
@@ -71,7 +71,7 @@ An attribute that represents the iam access_key.
 public readonly secret: Secret;
 ```
 
-- *Type:* [`@aws-cdk/aws-secretsmanager.Secret`](#@aws-cdk/aws-secretsmanager.Secret)
+- *Type:* [`aws-cdk-lib.aws_secretsmanager.Secret`](#aws-cdk-lib.aws_secretsmanager.Secret)
 
 An attribute that represents the secret.
 
@@ -96,14 +96,14 @@ const iamUserWithAccessKeyProps: IamUserWithAccessKeyProps = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| [`groups`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertygroups) | [`@aws-cdk/aws-iam.IGroup`](#@aws-cdk/aws-iam.IGroup)[] | Groups to add this user to. |
-| [`managedPolicies`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertymanagedpolicies) | [`@aws-cdk/aws-iam.IManagedPolicy`](#@aws-cdk/aws-iam.IManagedPolicy)[] | A list of managed policies associated with this role. |
-| [`password`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypassword) | [`@aws-cdk/core.SecretValue`](#@aws-cdk/core.SecretValue) | The password for the user. This is required so the user can access the AWS Management Console. |
+| [`groups`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertygroups) | [`aws-cdk-lib.aws_iam.IGroup`](#aws-cdk-lib.aws_iam.IGroup)[] | Groups to add this user to. |
+| [`managedPolicies`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertymanagedpolicies) | [`aws-cdk-lib.aws_iam.IManagedPolicy`](#aws-cdk-lib.aws_iam.IManagedPolicy)[] | A list of managed policies associated with this role. |
+| [`password`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypassword) | [`aws-cdk-lib.SecretValue`](#aws-cdk-lib.SecretValue) | The password for the user. This is required so the user can access the AWS Management Console. |
 | [`passwordResetRequired`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypasswordresetrequired) | `boolean` | Specifies whether the user is required to set a new password the next time the user logs in to the AWS Management Console. |
 | [`path`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypath) | `string` | The path for the user name. |
-| [`permissionsBoundary`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypermissionsboundary) | [`@aws-cdk/aws-iam.IManagedPolicy`](#@aws-cdk/aws-iam.IManagedPolicy) | AWS supports permissions boundaries for IAM entities (users or roles). |
+| [`permissionsBoundary`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertypermissionsboundary) | [`aws-cdk-lib.aws_iam.IManagedPolicy`](#aws-cdk-lib.aws_iam.IManagedPolicy) | AWS supports permissions boundaries for IAM entities (users or roles). |
 | [`userName`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyusername) | `string` | A name for the IAM user. |
-| [`encryptionKey`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyencryptionkey) | [`@aws-cdk/aws-kms.IKey`](#@aws-cdk/aws-kms.IKey) | An optional custom encryption key for the secret. |
+| [`encryptionKey`](#innovationsongmbhcdkiamuserwithaccesskeyiamuserwithaccesskeypropspropertyencryptionkey) | [`aws-cdk-lib.aws_kms.IKey`](#aws-cdk-lib.aws_kms.IKey) | An optional custom encryption key for the secret. |
 
 ---
 
@@ -113,7 +113,7 @@ const iamUserWithAccessKeyProps: IamUserWithAccessKeyProps = { ... }
 public readonly groups: IGroup[];
 ```
 
-- *Type:* [`@aws-cdk/aws-iam.IGroup`](#@aws-cdk/aws-iam.IGroup)[]
+- *Type:* [`aws-cdk-lib.aws_iam.IGroup`](#aws-cdk-lib.aws_iam.IGroup)[]
 - *Default:* No groups.
 
 Groups to add this user to.
@@ -128,7 +128,7 @@ You can also use `addToGroup` to add this user to a group.
 public readonly managedPolicies: IManagedPolicy[];
 ```
 
-- *Type:* [`@aws-cdk/aws-iam.IManagedPolicy`](#@aws-cdk/aws-iam.IManagedPolicy)[]
+- *Type:* [`aws-cdk-lib.aws_iam.IManagedPolicy`](#aws-cdk-lib.aws_iam.IManagedPolicy)[]
 - *Default:* No managed policies.
 
 A list of managed policies associated with this role.
@@ -143,7 +143,7 @@ You can add managed policies later using `addManagedPolicy(ManagedPolicy.fromAws
 public readonly password: SecretValue;
 ```
 
-- *Type:* [`@aws-cdk/core.SecretValue`](#@aws-cdk/core.SecretValue)
+- *Type:* [`aws-cdk-lib.SecretValue`](#aws-cdk-lib.SecretValue)
 - *Default:* User won't be able to access the management console without a password.
 
 The password for the user. This is required so the user can access the AWS Management Console.
@@ -188,7 +188,7 @@ For more information about paths, see IAM Identifiers in the IAM User Guide.
 public readonly permissionsBoundary: IManagedPolicy;
 ```
 
-- *Type:* [`@aws-cdk/aws-iam.IManagedPolicy`](#@aws-cdk/aws-iam.IManagedPolicy)
+- *Type:* [`aws-cdk-lib.aws_iam.IManagedPolicy`](#aws-cdk-lib.aws_iam.IManagedPolicy)
 - *Default:* No permissions boundary.
 
 AWS supports permissions boundaries for IAM entities (users or roles).
@@ -220,7 +220,7 @@ For valid values, see the UserName parameter for the CreateUser action in the IA
 public readonly encryptionKey: IKey;
 ```
 
-- *Type:* [`@aws-cdk/aws-kms.IKey`](#@aws-cdk/aws-kms.IKey)
+- *Type:* [`aws-cdk-lib.aws_kms.IKey`](#aws-cdk-lib.aws_kms.IKey)
 - *Default:* The Accounts default Secret Manager KMS Key will be used.
 
 An optional custom encryption key for the secret.

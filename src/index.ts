@@ -1,7 +1,8 @@
-import * as iam from '@aws-cdk/aws-iam';
-import * as kms from '@aws-cdk/aws-kms';
-import * as sm from '@aws-cdk/aws-secretsmanager';
-import { Construct, Fn, CfnOutput } from '@aws-cdk/core';
+import { Fn, CfnOutput } from 'aws-cdk-lib';
+import * as iam from 'aws-cdk-lib/aws-iam';
+import * as kms from 'aws-cdk-lib/aws-kms';
+import * as sm from 'aws-cdk-lib/aws-secretsmanager';
+import { Construct } from 'constructs';
 
 /**
  * Properties for the IAM User
