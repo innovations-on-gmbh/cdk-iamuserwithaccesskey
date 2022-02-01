@@ -1,5 +1,5 @@
 {
-  "name": "@innovations-on-gmbh/cdk-iamuserwithaccesskey",
+  "name": "@innovationson/cdk-iamuserwithaccesskey",
   "description": "Creating an IAM user with access key stored in Secrets manager",
   "repository": {
     "type": "git",
@@ -70,9 +70,6 @@
   ],
   "main": "lib/index.js",
   "license": "Apache-2.0",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "version": "0.0.0",
   "jest": {
     "testMatch": [
