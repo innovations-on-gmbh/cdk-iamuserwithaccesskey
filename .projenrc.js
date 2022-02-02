@@ -14,7 +14,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   githubOptions: {
     pullRequestLintOptions: {
       semanticTitleOptions: {
-        types: ['feat', 'fix', 'chore', 'docs,'],
+        types: ['feat', 'fix', 'chore', 'docs'],
       },
     },
   },
