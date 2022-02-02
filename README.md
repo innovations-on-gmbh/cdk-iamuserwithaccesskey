@@ -14,25 +14,18 @@ You should only use this for technical access to AWS APIs. Not for personal user
 
 ### projen
 
-This package has peer dependencies, which need to be installed along in the expected version.
-
 When using projen add the following to your .projenrc:
 
-```typescript
-  cdkDependencies: [
-    '@aws-cdk/aws-iam',
-    '@aws-cdk/aws-secretsmanager',
-    '@aws-cdk/core',
-  ],
-  deps: ['@innovations-on-gmbh/cdk-iamuserwithaccesskey'],
+```js
+  deps: ['@innovations/cdk-iamuserwithaccesskey@^1.0.0'],
 ```
 
 ## npm Package Installation
 
 ```bash
-yarn add --dev @innovations-on-gmbh/cdk-iamuserwithaccesskey
+yarn add --dev @innovationson/cdk-iamuserwithaccesskey
 # or
-npm install @innovations-on-gmbh/cdk-iamuserwithaccesskey --save-dev
+npm install @innovationson/cdk-iamuserwithaccesskey --save-dev
 ```
 
 ## Usage
@@ -40,8 +33,9 @@ npm install @innovations-on-gmbh/cdk-iamuserwithaccesskey --save-dev
 ### Typescript
 
 ```typescript
-import { App, Construct, Stack, StackProps } from '@aws-cdk/core';
-import { IamUserWithAccessKey } from '@innovations-on-gmbh/cdk-iamuserwithaccesskey';
+import { App, Stack, StackProps } from 'aws-cdk-lib';
+import { IamUserWithAccessKey } from '@innovationson/cdk-iamuserwithaccesskey';
+import { Construct } from 'constructs'
 
 export class MyStack extends Stack {
   constructor(scope: Construct, id: string, props: StackProps = {}) {

@@ -18,6 +18,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   gitignore: [
     '.DS_Store',
     '.idea',
+    '.vscode',
   ],
   docgen: true,
   autoApproveUpgrades: true,
