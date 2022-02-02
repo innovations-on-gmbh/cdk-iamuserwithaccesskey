@@ -11,6 +11,13 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/innovations-on-gmbh/cdk-iamuserwithaccesskey.git',
   npmDistTag: 'latest',
   releaseToNpm: true,
+  githubOptions: {
+    pullRequestLintOptions: {
+      semanticTitleOptions: {
+        types: ['feat', 'fix', 'chore', 'docs,'],
+      },
+    },
+  },
   devDeps: [
     'aws-cdk-lib',
     'constructs',

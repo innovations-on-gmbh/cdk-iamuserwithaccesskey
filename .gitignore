@@ -34,6 +34,7 @@ jspm_packages/
 .cache
 .DS_Store
 .idea
+.vscode
 !/.projenrc.js
 /test-reports/
 junit.xml
