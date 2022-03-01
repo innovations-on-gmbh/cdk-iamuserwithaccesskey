@@ -17,7 +17,7 @@ You should only use this for technical access to AWS APIs. Not for personal user
 When using projen add the following to your .projenrc:
 
 ```js
-  deps: ['@innovations/cdk-iamuserwithaccesskey@^1.0.0'],
+  deps: ['@innovationson/cdk-iamuserwithaccesskey@^1.0.0'],
 ```
 
 ## npm Package Installation
