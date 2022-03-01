@@ -2,7 +2,7 @@ const { awscdk } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Markus Ellers',
   authorAddress: 'm.ellers@inno-on.de',
-  cdkVersion: '2.14.0',
+  cdkVersion: '2.15.0',
   majorVersion: '1',
   defaultReleaseBranch: 'main',
   name: '@innovationson/cdk-iamuserwithaccesskey',
@@ -21,6 +21,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   devDeps: [
     'aws-cdk-lib',
     'constructs',
+    'awslint',
   ],
   gitignore: [
     '.DS_Store',
