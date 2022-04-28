@@ -11,7 +11,6 @@ const project = new awscdk.AwsCdkConstructLibrary({
   repositoryUrl: 'https://github.com/innovations-on-gmbh/cdk-iamuserwithaccesskey.git',
   npmDistTag: 'latest',
   releaseToNpm: true,
-  workflowContainerImage: 'jsii/superchain:node14',
   githubOptions: {
     pullRequestLintOptions: {
       semanticTitleOptions: {
@@ -19,16 +18,8 @@ const project = new awscdk.AwsCdkConstructLibrary({
       },
     },
   },
-  devDeps: [
-    'aws-cdk-lib',
-    'constructs',
-    'awslint',
-  ],
-  gitignore: [
-    '.DS_Store',
-    '.idea',
-    '.vscode',
-  ],
+  devDeps: ['aws-cdk-lib', 'constructs', 'awslint'],
+  gitignore: ['.DS_Store', '.idea', '.vscode'],
   docgen: true,
   autoApproveUpgrades: true,
   autoApproveOptions: { allowedUsernames: ['inno-on-bot'] },
