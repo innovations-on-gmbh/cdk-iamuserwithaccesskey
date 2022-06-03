@@ -9,6 +9,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
     'feature/majorVersion2': {
       majorVersion: '2',
       prerelease: true,
+      workflowName: 'release-majorVersion2',
     },
   },
   name: '@innovationson/cdk-iamuserwithaccesskey',
