@@ -5,6 +5,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   cdkVersion: '2.15.0',
   majorVersion: '1',
   defaultReleaseBranch: 'main',
+  releaseBranches: {
+    'feature/majorVersion2': {
+      majorVersion: '2',
+      prerelease: true,
+    },
+  },
   name: '@innovationson/cdk-iamuserwithaccesskey',
   description: 'Creating an IAM user with access key stored in Secrets manager',
   keywords: ['IAM', 'Access Key', 'Secretsmanager'],
