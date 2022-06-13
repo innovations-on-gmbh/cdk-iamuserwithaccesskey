@@ -1,4 +1,4 @@
-const { awscdk } = require('projen');
+const { awscdk, javascript } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Markus Ellers',
   authorAddress: 'm.ellers@inno-on.de',
@@ -25,14 +25,17 @@ const project = new awscdk.AwsCdkConstructLibrary({
       },
     },
   },
+  depsUpgradeOptions: {
+    ignoreProjen: false,
+    workflowOptions: {
+      schedule: javascript.UpgradeDependenciesSchedule.WEEKLY,
+    },
+  },
   devDeps: ['aws-cdk-lib', 'constructs', 'awslint'],
   gitignore: ['.DS_Store', '.idea', '.vscode'],
   docgen: true,
   autoApproveUpgrades: true,
   autoApproveOptions: { allowedUsernames: ['inno-on-bot'] },
   autoApproveProjenUpgrades: true,
-  depsUpgradeOptions: {
-    ignoreProjen: false,
-  },
 });
 project.synth();
