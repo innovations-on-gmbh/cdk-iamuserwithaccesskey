@@ -25,17 +25,21 @@ const project = new awscdk.AwsCdkConstructLibrary({
       },
     },
   },
-  depsUpgradeOptions: {
-    ignoreProjen: false,
-    workflowOptions: {
-      schedule: javascript.UpgradeDependenciesSchedule.WEEKLY,
-    },
-  },
+  // depsUpgradeOptions: {
+  //   ignoreProjen: false,
+  //   workflowOptions: {
+  //     schedule: javascript.UpgradeDependenciesSchedule.WEEKLY,
+  //   },
+  // },
   devDeps: ['aws-cdk-lib', 'constructs', 'awslint'],
   gitignore: ['.DS_Store', '.idea', '.vscode'],
   docgen: true,
   autoApproveUpgrades: true,
   autoApproveOptions: { allowedUsernames: ['inno-on-bot'] },
   autoApproveProjenUpgrades: true,
+  renovatebot: true,
+  renovatebotOptions: {
+    scheduleInterval: ['every weekend'],
+  },
 });
 project.synth();

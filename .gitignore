@@ -56,3 +56,4 @@ junit.xml
 .jsii
 tsconfig.json
 !/API.md
+!/renovate.json5
