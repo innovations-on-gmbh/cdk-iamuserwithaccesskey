@@ -1,4 +1,4 @@
-const { awscdk, javascript } = require('projen');
+const { awscdk, javascript, github } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Markus Ellers',
   authorAddress: 'm.ellers@inno-on.de',
@@ -19,6 +19,10 @@ const project = new awscdk.AwsCdkConstructLibrary({
   npmDistTag: 'latest',
   releaseToNpm: true,
   githubOptions: {
+    projenCredentials: github.GithubCredentials.fromApp({
+      appIdSecret: 'PROJEN_APP_ID',
+      privateKeySecret: 'PROJEN_APP_PRIVATE_KEY',
+    }),
     pullRequestLintOptions: {
       semanticTitleOptions: {
         types: ['feat', 'fix', 'chore', 'docs'],
