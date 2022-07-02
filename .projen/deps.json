@@ -21,7 +21,7 @@
     },
     {
       "name": "aws-cdk-lib",
-      "version": "2.15.0",
+      "version": "2.30.0",
       "type": "build"
     },
     {
@@ -80,6 +80,11 @@
       "type": "build"
     },
     {
+      "name": "npm-check-updates",
+      "version": "^12",
+      "type": "build"
+    },
+    {
       "name": "projen",
       "type": "build"
     },
@@ -98,7 +103,7 @@
     },
     {
       "name": "aws-cdk-lib",
-      "version": "^2.15.0",
+      "version": "^2.30.0",
       "type": "peer"
     },
     {
