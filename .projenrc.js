@@ -39,7 +39,7 @@ const project = new awscdk.AwsCdkConstructLibrary({
   gitignore: ['.DS_Store', '.idea', '.vscode'],
   docgen: true,
   autoApproveUpgrades: true,
-  autoApproveOptions: { allowedUsernames: ['renovatebot', 'renovate '] },
+  autoApproveOptions: { allowedUsernames: ['renovatebot', 'renovate'] },
   autoApproveProjenUpgrades: true,
   renovatebot: true,
   renovatebotOptions: {
