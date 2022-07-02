@@ -2,7 +2,7 @@ const { awscdk, javascript, github } = require('projen');
 const project = new awscdk.AwsCdkConstructLibrary({
   author: 'Markus Ellers',
   authorAddress: 'm.ellers@inno-on.de',
-  cdkVersion: '2.15.0',
+  cdkVersion: '2.30.0',
   majorVersion: '1',
   defaultReleaseBranch: 'main',
   releaseBranches: {
