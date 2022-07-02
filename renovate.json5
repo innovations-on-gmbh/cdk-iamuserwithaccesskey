@@ -1,4 +1,7 @@
 {
+  "labels": [
+    "auto-approve"
+  ],
   "schedule": [
     "every weekend"
   ],
@@ -27,7 +30,6 @@
     "@typescript-eslint/parser",
     "eslint",
     "jest-junit",
-    "npm-check-updates",
     "standard-version",
     "aws-cdk-lib",
     "constructs",

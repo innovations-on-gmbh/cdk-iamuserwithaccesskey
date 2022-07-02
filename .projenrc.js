@@ -41,9 +41,11 @@ const project = new awscdk.AwsCdkConstructLibrary({
   autoApproveUpgrades: true,
   autoApproveOptions: { allowedUsernames: ['renovatebot', 'renovate'] },
   autoApproveProjenUpgrades: true,
+  depsUpgrade: false,
   renovatebot: true,
   renovatebotOptions: {
     scheduleInterval: ['every weekend'],
+    labels: ['auto-approve'],
   },
 });
 project.synth();
