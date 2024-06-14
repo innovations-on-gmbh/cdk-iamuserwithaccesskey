@@ -4,6 +4,12 @@ const project = new awscdk.AwsCdkConstructLibrary({
   authorAddress: 'm.ellers@inno-on.de',
   cdkVersion: '2.30.0',
   majorVersion: '1',
+  releaseBranches: {
+    'feature/majorVersion2': {
+      majorVersion: '2',
+      prerelease: true,
+    },
+  },
   defaultReleaseBranch: 'main',
   releaseBranches: {
     'feature/majorVersion2': {

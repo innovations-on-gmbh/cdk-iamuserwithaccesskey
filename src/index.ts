@@ -19,7 +19,7 @@ export interface IamUserWithAccessKeyProps extends iam.UserProps {
 /**
  * An IAM User including an Access Key that will be stored in Secrets Manager. The properties as for normal IAM Users.
  */
-export class IamUserWithAccessKey extends iam.User {
+export class IamUserWithAccessKey extends Construct {
   /**
    * An attribute that represents the iam access_key.
    *
@@ -34,10 +34,12 @@ export class IamUserWithAccessKey extends iam.User {
   public readonly secret: sm.Secret;
 
   constructor(scope: Construct, id: string, props?: IamUserWithAccessKeyProps) {
-    super(scope, id, props);
+    super(scope, id);
 
-    this.accessKey = new iam.CfnAccessKey(this, `${id}AccessKey`, {
-      userName: this.userName,
+    const user = new iam.User(this, 'Resource', props);
+
+    this.accessKey = new iam.CfnAccessKey(this, 'AccessKey', {
+      userName: user.userName,
     });
 
     let UserSecretString = JSON.stringify({
@@ -46,11 +48,11 @@ export class IamUserWithAccessKey extends iam.User {
     });
 
     if (props?.encryptionKey) {
-      this.secret = new sm.Secret(this, `${id}UserSecret`, {
+      this.secret = new sm.Secret(this, 'UserSecret', {
         encryptionKey: props.encryptionKey,
       });
     } else {
-      this.secret = new sm.Secret(this, `${id}UserSecret`);
+      this.secret = new sm.Secret(this, 'UserSecret');
     };
 
     // We need to access the underlying cfn resource to set the secret string
